@@ -1,0 +1,6 @@
+create table employee(emp_id number(5)primary key, emp_name varchar2(20), city varchar2(20), salary number(7), age number(5));
+ insert into employee values (1, 'Raju', 'Pdy', 800000, 20);
+ insert into employee values (2, 'Niteesh', 'Pdy', 790000, 21);
+ insert into employee values (3, 'Punith', 'AP', 750000, 20);
+ insert into employee values (4, 'Sidharth', 'MP', 650000, 21);
+ insert into employee values (5, 'Mantu', 'Delhi', 900000, 22);

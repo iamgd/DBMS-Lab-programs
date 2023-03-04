@@ -1,0 +1,17 @@
+DECLARE
+n number;
+t number;
+FUNCTION func 
+RETURN number IS  
+   total number(2) := 0;  
+BEGIN  
+   SELECT count(*) into total  
+   FROM employee;  
+    RETURN total;  
+END; 
+BEGIN
+n:=2;
+        t:=func();
+        dbms_output.put_line(t);
+END;
+/

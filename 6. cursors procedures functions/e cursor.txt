@@ -1,0 +1,20 @@
+DECLARE
+    e_id employee.emp_id%type;
+    e_name employee.emp_name%type;
+    e_city employee.city%type;
+    cursor e_employee is
+    select emp_id, emp_name, city from employee;  
+begin
+    open e_employee;
+    loop
+   fetch e_employee into e_id, e_name, e_city;
+   exit when e_employee%notfound;
+   dbms_output.put_line(e_id || ' ' || e_name || ' ' || e_city);
+   end loop;
+   close e_employee;
+end;
+/
+
+
+
+

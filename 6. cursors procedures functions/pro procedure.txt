@@ -1,0 +1,10 @@
+DECLARE
+PROCEDURE pro
+AS 
+BEGIN 
+   dbms_output.put_line('It is working perfectly!'); 
+END; 
+BEGIN 
+pro();
+END; 
+/
