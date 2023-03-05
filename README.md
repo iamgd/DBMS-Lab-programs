@@ -1,3 +1,3 @@
 # DBMS-Lab-programs
-completed 6 programs,
-trigger and application program must be added
+completed 7 programs,
+Application program must be added
